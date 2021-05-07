@@ -1,0 +1,45 @@
+# Permissions
+# hcartic.auth - Allows the user to use an authentication code to secure their account. Useful for staff!
+# hcartic.auth.passed.attempts - Having this permission allows you to see if a player passes authentication above or equal to the threshold. Useful to prevent major griefing!
+
+# Authentication prefix (Placeholder: {prefix})
+AUTH_PREFIX: '&f[&bAUTH&f]&r'
+
+# Minimum authentication code length
+auth-code-length: 15
+
+# Use incorrect authentication threshold
+enable-incorrect-auth-threshold: true
+
+# Alert staff when someone passes authentication if incorrect authentication threshold is met or passed (Only works if enable-incorrect-auth-threshold is true)
+incorrect-auth-threshold: 10
+
+# Message when the player authenticates
+SUCCESS_MESSAGE: '{prefix} &aYou''ve successfully &bauthenticated&a! Your &bauthentication &ftracker &ahas been updated.'
+
+# Message when the player fails authenticating
+FAIL_MESSAGE: '{prefix} &cIncorrect &bauthentication &ccode! Please enter your &bauthentication &ccode linked to your account.'
+
+# Message when unauthenticated player tries to execute commands
+BLOCK_COMMAND_MESSAGE: '{prefix} &cYou must &bauthenticate &cto do this!'
+
+# Message when the player passes their authentication if incorrect authentication threshold is met or passed (Messages everyone with permission to view)
+AUTH_PASSED_ABOVE_THRESHOLD_MESSAGE: '{prefix} &b{player} &7passed &bauthentication &7with &f{attempts} &7failed attempts. (Their account might''ve been hijacked??)'
+
+# Message when the player inputs an authentication code which contains special characters
+SPECIAL_CHARACTER_MESSAGE: '{prefix} &cThe &bauthentication &ccode you entered contained special characters.'
+
+# Message whe the player inputs an authentication code which is shorter than the required amount
+AUTH_CODE_LENGTH_MESSAGE: '{prefix} &cThe &bauthentication &ccode you entered was less than &f{length} &cand is invalid!'
+
+# Kick message when a players authentication code is changed
+AUTH_CHANGED_MESSAGE: '&aYour &bauthentication &acode has been changed, please reconnect!'
+
+# Message when the player has no authentication
+NO_AUTH_MESSAGE: '{prefix} &cThe player has no &bauthentication &cpermissions.'
+
+# Message when the players authentication code is changed
+AUTH_CHANGED_INSTIGATOR_MESSAGE: '{prefix} &b{player}''s &bauthentication &acode has been changed!'
+
+# Message when the player is setting up authentication for the first time
+FIRST_TIME_MESSAGE: '{prefix} &7Please create an &bauthentication &7code using letters and numbers. The &bauthentication &7code must be longer than &f{length}&7!'
